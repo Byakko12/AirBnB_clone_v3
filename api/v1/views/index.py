@@ -25,3 +25,6 @@ def Stats():
     for key, value in classes.items():
         dict[key] = storage.count(value)
     return jsonify(dict)
+
+if __name__ == "__main__":
+    pass
