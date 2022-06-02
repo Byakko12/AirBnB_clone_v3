@@ -83,9 +83,9 @@ class DBStorage:
             obj = cls_s["{}.{}".format(cls.__name__, id)]
             return (obj)
         except Exception:
-            return None
+            return (None)
 
     def count(self, cls=None):
         """count number of objects"""
         count = len(self.all(cls))
-        return count
+        return (count)
